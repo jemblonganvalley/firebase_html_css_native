@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./style.css">
+  <title>Home Page</title>
+</head>
+<body>
+    <div id="app">
+      <div>
+        <nav>
+          <a href="/">Home</a>
+          <a href="/about">About</a>
+        </nav>
+        <h1>Home</h1>
+        <form class="article_form" id="article_form" onsubmit="handleSubmit(event)">
+          <div class="form_control">
+            <label for="author">Author</label>
+            <input type="text" id="author">
+          </div>
+          <div class="form_control">
+            <label for="description">description</label>
+            <textarea type="text" id="description" ></textarea>
+          </div>
+          <button type="submit">submit</button>
+        </form>
+
+        <div id="article_wrapper"></div>
+      </div>
+    </div>
+
+    <script type="module" src="api/getData.js"></script>
+</body>
+</html>
